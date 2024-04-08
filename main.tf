@@ -6,11 +6,6 @@ resource "github_repository" "repo" {
   is_template        = var.is_template
   archive_on_destroy = true
 
-  template {
-    owner      = var.template_owner
-    repository = var.template_repo
-  }
-
   # Features to enable
   has_discussions = true
   has_projects    = true

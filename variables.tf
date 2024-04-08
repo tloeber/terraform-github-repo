@@ -18,14 +18,6 @@ variable "is_template" {
   description = "Whether the repository is a template"
   type        = bool
 }
-variable "template_repo" {
-  description = "The name of the template repo from which we create our repo."
-  type        = string
-}
-variable "template_owner" {
-  description = "The GitHub account who owns the template repo we use"
-  type        = string
-}
 
 
 # AWS
